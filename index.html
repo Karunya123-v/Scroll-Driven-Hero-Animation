@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Hero Assignment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body class="bg-zinc-950 text-white antialiased">
+
+    <main class="relative h-[300vh]">
+        
+        <section class="sticky top-0 h-screen w-full flex flex-col items-center justify-center overflow-hidden">
+            
+            <h1 id="main-headline" class="text-6xl md:text-8xl font-black tracking-tighter z-10 opacity-0">
+                WELCOMEITZFIZZ
+            </h1>
+
+            <div id="hero-image" class="absolute w-full max-w-2xl px-4 z-0 scale-50 opacity-0">
+                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=800" 
+                     alt="Hero Car" class="w-full drop-shadow-2xl">
+            </div>
+
+            <div id="stats-container" class="mt-20 flex gap-12 z-10 opacity-0">
+                <div class="stat-item text-center">
+                    <span class="block text-4xl font-bold">98%</span>
+                    <span class="text-zinc-400 text-sm uppercase tracking-widest">Precision</span>
+                </div>
+                <div class="stat-item text-center">
+                    <span class="block text-4xl font-bold">0.2s</span>
+                    <span class="text-zinc-400 text-sm uppercase tracking-widest">Response</span>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
